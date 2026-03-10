@@ -1,0 +1,18 @@
+create database STUDENTS;
+use STUDENTS;
+create table employee (id int primary key , name varchar(50),Age int, department varchar(50),salary int);
+insert into employee value(1, 'Arun', 28, 'HR', 30000);
+insert into employee value(2, 'Bala', 24, 'IT', 45000);
+insert into employee value(3, 'Charan', 30, 'Finance', 50000);
+insert into employee value(4, 'Anitha', 26, 'IT', 42000);
+insert into employee  value(5, 'Divya', 23, 'HR', 28000);
+SELECT*FROM employee;
+create table students(students_id int, age int,course varchar(225),marks int);
+alter table employee add email varchar(225);
+alter table employee modify column salary decimal(10,2);
+alter table employee rename column employee to employee_detail;
+alter table employee drop column age;
+alter table students rename column  students to college_students;
+truncate table employee_detail;
+SELECT*FROM students; 
+drop table college_students;
